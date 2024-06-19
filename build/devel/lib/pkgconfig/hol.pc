@@ -1,0 +1,8 @@
+prefix=/home/elias/catkin_ws/src/hol/build/devel
+
+Name: hol
+Description: Description of hol
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

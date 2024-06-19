@@ -1,0 +1,18 @@
+
+<launch>
+    <param name="~frame_id" type="string" value="world_ned" />
+
+    <!-- <include file="$(find turtlebot_simulation)/launch/kobuki_motion_planning_nogpu.launch" /> -->
+    <include file="$(find turtlebot_simulation)/launch/kobuki_motion_planning.launch" />
+    <!-- <include file="$(find turtlebot_simulation)/launch/kobuki_motion_planning.launch" /> -->
+    
+    <!-- <include file="$(find pose_based_graph_slam_icp)/launch/kobuki_basic.launch" /> -->
+    <!-- <include file="$(find pose_based_graph_slam_icp)/launch/turtlebot_basic.launch" /> -->
+    <!-- <include file="$(find pose_based_graph_slam_icp)/launch/turtlebot_basic.launch" /> -->
+    <!-- <include file="$(find pose_based_graph_slam_icp)/launch/turtlebot_integration.launch" /> -->
+    <!-- <node pkg="localization_lab" type="velocity_converter.py" name="velocity_converter"/> -->
+    <node pkg="localization_lab" type="laser_scan_to_point_cloud_node.py" name="laserscan_to_pointcloud"/>
+    <node pkg="octomap_server" type="octomap_server_node" name="octomap" output="screen"/>
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find localization_lab)/config/finalOdom.rviz"/>
+   
+</launch>

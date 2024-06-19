@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/elias/catkin_ws/src/hol/build/devel/setup.sh

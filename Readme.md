@@ -1,11 +1,6 @@
 
 
 ### Pose Based Graph SLAM Using Scan Matching with ICP
-
-### Group Members 
-   1. Eliyas Kidanemariam Abraha - u1992469
-   2. Goitom Leaku u1985499
-   3. Khaled Mohamed u1992341
 ## Table of Contents
 1. [Usage](#usage)
 2. [Introduction](#introduction)
